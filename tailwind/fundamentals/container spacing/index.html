@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Container Spacing</title>
+  </head>
+  <body class="p-4">
+    <!-- Margin -->
+
+    <h1 class="text-white bold bg-yellow-500 m-4 rounded">1. Margin</h1>
+
+    <!-- Arbitrary spacing -->
+
+    <h1 class="text-white bold bg-yellow-500 m-[50px] rounded">1. Margin</h1>
+    <!-- Padding -->
+
+    <div
+      class="flex items-center justify-center p-4 border-red-500 border-2 rounded-lg gap-4 flex-wrap"
+    >
+      <h1 class="text-white bold bg-yellow-500 p-4 rounded">1. Margin</h1>
+      <p class="text-white bg-teal-100 pl-4 rounded">Padding on left</p>
+      <p class="text-white bg-teal-200 pr-4 rounded">Padding on right</p>
+      <p class="text-white bg-teal-300 px-4 rounded">Padding on x axis</p>
+      <p class="text-white bg-teal-400 py-4 rounded">Padding on Y axis</p>
+
+      <p class="text-white bg-teal-300 pt-4 rounded">Padding on top</p>
+      <p class="text-white bg-teal-400 pb-4 rounded">Padding on bottom</p>
+    </div>
+
+    <!-- Space Between -->
+    <h3>Space Between X</h3>
+    <div
+      class="flex items-center justify-center flex-wrap gap-4 space-x-2 p-3 bg-gray-100 rounded"
+    >
+      <div class="p-3 bg-teal-100 rounded">Space on x Axis</div>
+      <div class="p-3 bg-teal-200 rounded">Space on x Axis</div>
+      <div class="p-3 bg-teal-300 rounded">Space on x Axis</div>
+      <div class="p-3 bg-teal-400 rounded">Space on x Axis</div>
+    </div>
+
+    <h3>Space Between Y</h3>
+    <div class="space-y-2">
+      <div class="p-3 bg-teal-100"></div>
+      <div class="p-3 bg-teal-200"></div>
+      <div class="p-3 bg-teal-300"></div>
+      <div class="p-3 bg-teal-400"></div>
+    </div>
+  </body>
+</html>

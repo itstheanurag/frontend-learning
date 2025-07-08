@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Background and Shadows</title>
+  </head>
+  <body>
+    <!-- bg-auto background-size: auto;
+bg-cover background-size: cover;
+bg-contain background-size: contain;
+bg-size-(<custom-property>) background-size: var(<custom-property>)   bg-size-[<value>] background-size: <value>; -->
+
+    <div
+      class="h-screen w-auto bg-no-repeat bg-cover"
+      style="
+        background-image: url('https://images.unsplash.com/photo-1537498425277-c283d32ef9db?q=80&w=1178&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+      "
+    ></div>
+    <h1 class="text-2xl font-bold mb-4">Background Image</h1>
+
+    <hr />
+    <br />
+    <hr />
+
+    <h1 class="text-2xl font-bold mb-4">Shadows</h1>
+    <div
+      class="flex flex-wrap items-center justify-center gap-4 bg-gray-200 p-4 m-4 rounded"
+    >
+      <div class="m-4 shadow-md rounded bg-white p-4">Shadow Medium</div>
+      <div class="m-4 shadow-lg rounded bg-white p-4">Shadow large</div>
+      <div class="m-4 shadow-xl rounded bg-white p-4">Shadow Extra large</div>
+      <div class="m-4 shadow-2xl rounded bg-white p-4">
+        Shadow Double Extra large
+      </div>
+    </div>
+
+    <hr />
+    <br />
+    <hr />
+
+    <h1 class="text-2xl font-bold mb-4">Inner Shadows</h1>
+
+    <!-- 'shadow-inner' applies an inset (inner) shadow -->
+    <div class="m-4 shadow-inner rounded bg-white p-4 w-[200px] bg-red-200">
+      Inner Shadow
+    </div>
+
+    <h1 class="text-2xl font-bold mb-4">Color in Shadows</h1>
+
+    <!-- You can use Tailwind's arbitrary shadow color feature with shadow-[color] -->
+    <div
+      class="flex flex-wrap items-center justify-center gap-4 bg-gray-200 p-4 m-4 rounded"
+    >
+      <!-- Red shadow using arbitrary value -->
+      <div class="m-4 shadow-lg shadow-red-500/50 rounded bg-white p-4">
+        shadow-lg shadow-red-500/50
+      </div>
+      <!-- Blue shadow using arbitrary value -->
+      <div class="m-4 shadow-xl shadow-blue-500/50 rounded bg-white p-4">
+        shadow-xl shadow-blue-500/50
+      </div>
+      <!-- Green shadow using arbitrary value -->
+      <div class="m-4 shadow-2xl shadow-green-500/50 rounded bg-white p-4">
+        shadow-2xl shadow-green-500/50
+      </div>
+      <!-- Custom shadow color using arbitrary hex -->
+      <div class="m-4 shadow-xl shadow-[#f59e42]/60 rounded bg-white p-4">
+        shadow-xl shadow-[#f59e42]/60
+      </div>
+    </div>
+    <!-- 
+  - Use `shadow-*` for shadow size and `shadow-{color}/{opacity}` for shadow color.
+  - You can use Tailwind's color palette or arbitrary values for custom shadow colors.
+-->
+
+    <h1 class="text-2xl font-bold mb-4">Gradients</h1>
+
+    <!-- Basic linear gradient from left to right -->
+    <div
+      class="bg-gradient-to-r from-blue-400 to-purple-500 text-white p-6 rounded mb-4"
+    >
+      bg-gradient-to-r from-blue-400 to-purple-500
+    </div>
+
+    <!-- Gradient from top to bottom -->
+    <div
+      class="bg-gradient-to-b from-green-400 to-yellow-300 text-gray-800 p-6 rounded mb-4"
+    >
+      bg-gradient-to-b from-green-400 to-yellow-300
+    </div>
+
+    <!-- Gradient with three colors, diagonal direction -->
+    <div
+      class="bg-gradient-to-br from-pink-400 via-yellow-300 to-red-500 text-white p-6 rounded mb-4"
+    >
+      bg-gradient-to-br from-pink-400 via-yellow-300 to-red-500
+    </div>
+  </body>
+</html>

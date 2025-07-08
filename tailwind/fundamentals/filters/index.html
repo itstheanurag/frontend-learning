@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Filters</title>
+  </head>
+  <body class="p-4">
+    <h1 class="text-2xl font-bold mb-4">Tailwind CSS Image Filters</h1>
+
+    <!-- Original image -->
+    <div class="mb-4">
+      <img
+        src="https://images.unsplash.com/photo-1537498425277-c283d32ef9db?q=80&w=400"
+        alt="Sample"
+        class="rounded shadow"
+      />
+      <div class="text-sm mt-2">Original</div>
+    </div>
+
+    <!-- Grayscale filter -->
+    <div class="mb-4">
+      <img
+        src="https://images.unsplash.com/photo-1537498425277-c283d32ef9db?q=80&w=400"
+        alt="Grayscale"
+        class="rounded shadow filter grayscale"
+      />
+      <div class="text-sm mt-2">grayscale</div>
+    </div>
+
+    <!-- Blur filter -->
+    <div class="mb-4">
+      <img
+        src="https://images.unsplash.com/photo-1537498425277-c283d32ef9db?q=80&w=400"
+        alt="Blur"
+        class="rounded shadow filter blur"
+      />
+      <div class="text-sm mt-2">blur</div>
+    </div>
+
+    <!-- Sepia filter -->
+    <div class="mb-4">
+      <img
+        src="https://images.unsplash.com/photo-1537498425277-c283d32ef9db?q=80&w=400"
+        alt="Sepia"
+        class="rounded shadow filter sepia"
+      />
+      <div class="text-sm mt-2">sepia</div>
+    </div>
+
+    <!-- Brightness filter -->
+    <div class="mb-4">
+      <img
+        src="https://images.unsplash.com/photo-1537498425277-c283d32ef9db?q=80&w=400"
+        alt="Brightness"
+        class="rounded shadow filter brightness-150"
+      />
+      <div class="text-sm mt-2">brightness-150</div>
+    </div>
+
+    <!-- Multiple filters combined -->
+    <div class="mb-4">
+      <img
+        src="https://images.unsplash.com/photo-1537498425277-c283d32ef9db?q=80&w=400"
+        alt="Combined Filters"
+        class="rounded shadow filter grayscale blur-sm brightness-125"
+      />
+      <div class="text-sm mt-2">grayscale blur-sm brightness-125</div>
+    </div>
+  </body>
+</html>

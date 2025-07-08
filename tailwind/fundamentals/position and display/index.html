@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Positon and Display</title>
+  </head>
+  <body class="p-4">
+    <!-- static position: static; fixed position: fixed; absolute position: absolute;
+    relative position: relative; sticky position: sticky; -->
+
+    <h1 class="text-2xl">Postioning</h1>
+
+    <h1 class="text-xl">Relative and absolute</h1>
+    <div class="bg-green-300 rounded items-center flex flex-col p-10 m-5">
+      <div class="relative bg-teal-500 rounded p-5 m-5 w-1/2 h-64">
+        <p class="text-white">This is a relative positioned element.</p>
+        <div
+          class="absolute right-0 top-0 rounded p-4 border-teal-700 border-2 bg-teal-300"
+        >
+          Absolute position child (right-0 top-0)
+        </div>
+      </div>
+
+      <div class="relative bg-teal-500 rounded p-5 m-5 w-1/2 h-64">
+        <p class="text-white">This is a relative positioned element.</p>
+        <div
+          class="absolute right-auto top-auto rounded p-4 border-teal-700 border-2 bg-teal-300"
+        >
+          Absolute position child (right-auto top-auto)
+        </div>
+      </div>
+
+      <!-- <div class="relative bg-teal-500 rounded p-5 m-5 w-1/2 h-96">
+          <p class="text-white">This is a relative positioned element.</p>
+          <div
+            class="absolute right-0 top-0 rounded p-4 border-teal-700 border-2 bg-teal-300"
+          >
+            Absolute position child
+          </div>
+        </div> -->
+
+      <div class="relative bg-teal-500 rounded p-5 m-5 w-1/2 h-64">
+        <p class="text-white">This is a relative positioned element.</p>
+        <div
+          class="absolute left-0 bottom-0 rounded p-4 border-teal-700 border-2 bg-teal-300"
+        >
+          Absolute position child (left-0 bottom-0)
+        </div>
+      </div>
+
+      <div class="relative bg-teal-500 rounded p-5 m-5 w-1/2 h-64">
+        <p class="text-white">This is a relative positioned element.</p>
+        <div
+          class="absolute right-0 bottom-0 rounded p-4 border-teal-700 border-2 bg-teal-300"
+        >
+          Absolute position child (right-0 bottom-0)
+        </div>
+      </div>
+    </div>
+
+    <br />
+    <hr />
+    <br />
+    <h1 class="text-xl">Sticky</h1>
+
+    <!-- Sticky Example: This header will "stick" to the top of the page when you scroll past it -->
+    <div class="h-[200px] bg-gray-100 mb-4 p-2">
+      Scroll down to see sticky in action
+    </div>
+    <div class="sticky top-0 bg-yellow-300 p-4 rounded shadow mb-4">
+      <!-- 'sticky' makes this element stick to the top (top-0) when scrolling -->
+      I am a sticky element (sticky top-0)
+    </div>
+    <div class="h-[400px] bg-gray-200 mb-4 p-2">
+      More content to enable scrolling
+    </div>
+
+    <!-- Static Example: This is the default position for elements -->
+    <div class="static bg-blue-200 p-4 rounded">
+      <!-- 'static' is the default position; the element stays in the normal document flow -->
+      I am a static element (static, default)
+    </div>
+    <br />
+    <hr />
+    <br />
+
+    <h1 class="text-2xl">Display</h1>
+
+    <div class="mb-4">
+      <!-- Elements with 'inline' display sit next to each other and only take up as much width as needed -->
+      <span class="inline bg-blue-200 px-2 rounded">inline</span>
+      <span class="inline bg-blue-200 px-2 rounded">inline</span>
+    </div>
+
+    <div class="mb-4">
+      <!-- Elements with 'block' display each take the full width and appear on a new line -->
+      <span class="block bg-green-200 px-2 rounded mb-1">block</span>
+      <span class="block bg-green-200 px-2 rounded">block</span>
+    </div>
+
+    <div class="mb-4">
+      <!-- Elements with 'inline-block' display sit next to each other but respect width and height -->
+      <span class="inline-block bg-purple-200 px-2 rounded w-[100px] h-[100px]"
+        >inline-block</span
+      >
+      <span class="inline-block bg-purple-200 px-2 rounded w-[120px] h-[120px]"
+        >inline-block</span
+      >
+    </div>
+  </body>
+</html>

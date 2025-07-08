@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com/"></script>
+    <title>Flex Box</title>
+  </head>
+  <body>
+    <h3 class="text-xl text-green-300">Flex</h3>
+    <!-- Basic flex row: items are placed in a row -->
+    <div class="border m-10 rounded-xl">
+      <ul class="flex">
+        <li class="bg-teal-500 m-5 p-5">01</li>
+        <li class="bg-teal-500 m-5 p-5">02</li>
+        <li class="bg-teal-500 m-5 p-5">03</li>
+        <li class="bg-teal-500 m-5 p-5">04</li>
+        <li class="bg-teal-500 m-5 p-5">05</li>
+      </ul>
+    </div>
+
+    <h3 class="text-xl text-green-300">Flex justify-center</h3>
+    <!-- justify-center: centers items horizontally in the flex container -->
+    <div class="border m-10 rounded-xl">
+      <ul class="flex justify-center">
+        <li class="bg-teal-500 m-5 p-5">01</li>
+        <li class="bg-teal-500 m-5 p-5">02</li>
+        <li class="bg-teal-500 m-5 p-5">03</li>
+        <li class="bg-teal-500 m-5 p-5">04</li>
+        <li class="bg-teal-500 m-5 p-5">05</li>
+      </ul>
+    </div>
+
+    <h3 class="text-xl text-green-300">Flex justify-between</h3>
+    <!-- justify-between: places first item at the start, last at the end, and equal space between items -->
+    <div class="border m-10 rounded-xl">
+      <ul class="flex justify-between">
+        <li class="bg-teal-500 m-5 p-5">01</li>
+        <li class="bg-teal-500 m-5 p-5">02</li>
+        <li class="bg-teal-500 m-5 p-5">03</li>
+        <li class="bg-teal-500 m-5 p-5">04</li>
+        <li class="bg-teal-500 m-5 p-5">05</li>
+      </ul>
+    </div>
+
+    <h3 class="text-xl text-green-300">Flex Order</h3>
+    <!-- order-{n}: controls the order of flex items (lower number appears first) -->
+    <div class="border m-10 rounded-xl">
+      <ul class="flex">
+        <li class="bg-teal-500 m-5 p-5 order-5">
+          01
+          <!-- order-5: appears last -->
+        </li>
+        <li class="bg-teal-500 m-5 p-5 order-4">
+          02
+          <!-- order-4 -->
+        </li>
+        <li class="bg-teal-500 m-5 p-5 order-3">
+          03
+          <!-- order-3 -->
+        </li>
+        <li class="bg-teal-500 m-5 p-5 order-2">
+          04
+          <!-- order-2 -->
+        </li>
+        <li class="bg-teal-500 m-5 p-5">
+          05
+          <!-- default order (0): appears first -->
+        </li>
+      </ul>
+    </div>
+
+    <h3 class="text-xl text-green-300">Flex Grow And Shrink</h3>
+    <!-- 
+      flex-none: item will not grow or shrink
+      flex-initial: item will not grow, but can shrink
+      flex-auto: item can grow and shrink as needed
+      flex-1: item will grow to fill available space (equally with other flex-1 items)
+    -->
+    <div class="border m-10 rounded-xl">
+      <ul class="flex">
+        <li class="bg-teal-500 m-5 p-5 flex-none rounded">
+          01
+          <!-- flex-none -->
+        </li>
+        <li class="bg-teal-500 m-5 p-5 flex-initial rounded">
+          02
+          <!-- flex-initial -->
+        </li>
+        <li class="bg-teal-500 m-5 p-5 flex-auto rounded">
+          03
+          <!-- flex-auto -->
+        </li>
+        <li class="bg-teal-500 m-5 p-5 flex-1 rounded">
+          04
+          <!-- flex-1 -->
+        </li>
+        <li class="bg-teal-500 m-5 p-5 rounded">
+          05
+          <!-- default flex behavior -->
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

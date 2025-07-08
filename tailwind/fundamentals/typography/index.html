@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Text Decorations</title>
+  </head>
+  <body class="p-4">
+    <h1 class="text-3xl font-bold mb-4">Text Decorations</h1>
+    <h1 class="text-3xl font-bold mb-4">1. Font Size</h1>
+    <div class="flex items-center justify-center flex-wrap gap-6">
+      <p class="text-xs bg-red-200 p-4 rounded">Extra small</p>
+      <p class="text-sm bg-red-300 p-4 rounded">small</p>
+      <p class="text-base bg-red-400 p-4 rounded">Base</p>
+      <p class="text-lg bg-teal-300 p-4 rounded">large</p>
+      <p class="text-xl bg-teal-400 p-4 rounded">xl large</p>
+      <p class="text-2xl bg-teal-500 p-4 rounded">2xl extra large</p>
+      <p class="text-3xl bg-red-500 p-4 rounded">3xl extra large</p>
+      <p class="text-4xl bg-red-600 p-4 rounded">5xl extra large</p>
+      <p class="text-5xl bg-violet-300 p-4 rounded">5xl extra large</p>
+      <p class="text-6xl bg-violet-400 p-4 rounded">6xl extra large</p>
+      <p class="text-7xl bg-violet-500 p-4 rounded">7xl extra large</p>
+      <p class="text-8xl bg-violet-600 p-4 rounded">8xl extra large</p>
+    </div>
+
+    <!-- https://tailwindcss.com/docs/font-family -->
+    <h1 class="text-3xl font-bold mb-4">2. Font Family</h1>
+    <div class="flex items-center justify-center flex-col gap-6">
+      <p class="font-mono bg-red-200 p-4 rounded">Extra small</p>
+      <p class="font-serif bg-red-300 p-4 rounded">small</p>
+      <p class="text-sans bg-red-400 p-4 rounded">Base</p>
+    </div>
+
+    <!-- https://tailwindcss.com/docs/font-weight -->
+    <h1 class="text-3xl font-bold mb-4">3. Font weight</h1>
+    <div class="container bg-teal-400 p-10 m-10 rounded">
+      <p class="font-light">Light weighted text</p>
+      <p class="font-medium">Medium weighted text</p>
+      <p class="font-semibold">Semibold weighted text</p>
+      <p class="font-bold">Bold weighted text</p>
+      <p class="font-extrabold">Extrabold weighted text</p>
+    </div>
+
+    <!-- https://tailwindcss.com/docs/letter-spacing -->
+    <h1 class="text-3xl font-bold mb-4">4. Letter spacing</h1>
+    <div class="container bg-orange-400 p-10 m-10 rounded">
+      <p class="tracking-tight">tracking-tight</p>
+      <p class="tracking-lighter">tracking-lighter</p>
+      <p class="tracking-normal">tracking-normal</p>
+      <p class="tracking-wide">tracking-wide</p>
+      <p class="tracking-wider">Extrabold weighted text</p>
+      <p class="tracking-widest">tracking-widest</p>
+    </div>
+
+    <!-- tracking-tighter letter-spacing: var(--tracking-tighter); /* -0.05em */
+    tracking-tight letter-spacing: var(--tracking-tight); /* -0.025em */
+    tracking-normal letter-spacing: var(--tracking-normal); /* 0em */
+    tracking-wide letter-spacing: var(--tracking-wide); /* 0.025em */
+    tracking-wider letter-spacing: var(--tracking-wider); /* 0.05em */
+    tracking-widest letter-spacing: var(--tracking-widest); /* 0.1em */ -->
+
+    <!-- https://tailwindcss.com/docs/text-align -->
+    <h1 class="text-3xl font-bold mb-4">5. Text alignment</h1>
+    <div class="container bg-cyan-400 p-10 m-10 rounded">
+      <p class="text-left">text-left</p>
+      <p class="text-center">text-center</p>
+      <p class="text-right">text-right</p>
+      <p class="text-justify">text-justify</p>
+      <p class="text-start">Extrabold weighted text</p>
+      <p class="text-end">text-end</p>
+    </div>
+
+    <!-- text-left text-align: left; text-center text-align: center; text-right
+    text-align: right; text-justify text-align: justify; text-start text-align:
+    start; text-end text-align: end; -->
+
+    <!-- https://tailwindcss.com/docs/text-decoration-style -->
+    <h1 class="text-3xl font-bold mb-4">6. Text Decoration Style</h1>
+    <div class="container bg-black p-10 m-10 rounded text-white">
+      <p class="underline decoration-solid">The quick brown fox...</p>
+      <p class="underline decoration-double">The quick brown fox...</p>
+      <p class="underline decoration-dotted">The quick brown fox...</p>
+      <p class="underline decoration-dashed">The quick brown fox...</p>
+      <p class="underline decoration-wavy">The quick brown fox...</p>
+    </div>
+
+    <!-- https://tailwindcss.com/docs/text-underline-offset -->
+    <h1 class="text-3xl font-bold mb-4">7. Text Decoration Offset</h1>
+    <div class="container bg-indigo-400 p-10 m-10 rounded">
+      <p class="underline underline-offset-1">The quick brown fox...</p>
+      <p class="underline underline-offset-2">The quick brown fox...</p>
+      <p class="underline underline-offset-4">The quick brown fox...</p>
+      <p class="underline underline-offset-8">The quick brown fox...</p>
+    </div>
+
+    <!-- uppercase text-transform: uppercase; lowercase text-transform: lowercase;
+    capitalize text-transform: capitalize; normal-case text-transform: none; -->
+
+    <!-- https://tailwindcss.com/docs/text-transform -->
+    <h1 class="text-3xl font-bold mb-4">8. Text Transform</h1>
+    <div class="container bg-red-400 p-10 m-10 rounded">
+      <p class="lowercase">The quick brown fox...</p>
+      <p class="uppercase">The quick brown fox...</p>
+      <p class="capitalize">The quick brown fox...</p>
+      <p class="normal-case">The quick brown fox...</p>
+      <p class="capitalize md:uppercase">The quick brown fox...</p>
+    </div>
+  </body>
+</html>
